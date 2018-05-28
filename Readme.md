@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Vladislav Beliakovskiy](https://up.htmlacademy.ru/htmlcss/21/user/19362).
-* Наставник: `Неизвестно`.
+* Наставник: Максим Фарига.
 
 ---
 
