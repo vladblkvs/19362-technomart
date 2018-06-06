@@ -81,51 +81,68 @@
         <h1>Перфораторы</h1>
       </div>
       <div class="catalog-content">
-        <div class="catalog-filter">
-          <div class="filter-header">
-            <span>Фильтр:</span>
-            <div class="filters">
-              <div class="filter-price">
-                <h3>Цена:</h3>
-                <div class="price-control">
-                  <span>0 — 30000</span>
-                </div>
+        <form class="catalog-filter" method="GET" action="">
+          <p class="filter-header">Фильтр:</p>
+          <div class="filters">
+            <div class="filter-price">
+              <h3 class="filter-title">Цена:</h3>
+              <div class="price-control">
+                <span>0 — 30000</span>
               </div>
-              <div class="filter-manufacturer">
-                <h3>Производители:</h3>
-                <div class="manufacturer-control">
-                  <span>Bosch</span>
-                  <span>Интерскол</span>
-                  <span>Makita</span>
-                  <span>Dewalt</span>
-                  <span>Hitachi</span>
-                </div>
-              </div>
-              <div class="filter-power">
-                <h3>Питание:</h3>
-                <div class="power-control">
-                  <span>Аккумуляторные</span>
-                  <span>Сетевые</span>
-                </div>
-              </div>
-              <button class="submit-filter" type="submit">Показать</button>
             </div>
+            <div class="filter-manufacturer">
+              <h3 class="filter-title">Производители:</h3>
+              <div class="manufacturer-list">
+                <label class="filter-item-title" for="brand-Bosch">
+                  <input type="checkbox" id="brand-Bosch" name="manufacturer" value="Bosch">
+                  <span>Bosch</span>
+                </label>
+                <label class="filter-item-title" for="brand-Interskol">
+                  <input type="checkbox" id="brand-Interskol" name="manufacturer" value="Interskol">
+                  <span>Интерскол</span>
+                </label>
+                <label class="filter-item-title" for="brand-Makita">
+                  <input type="checkbox" id="brand-Makita" name="manufacturer" value="Makita">
+                  <span>Makita</span>
+                </label>
+                <label class="filter-item-title" for="brand-Dewalt">
+                  <input type="checkbox" id="brand-Dewalt" name="manufacturer" value="Dewalt">
+                  <span>Dewalt</span>
+                </label>
+                <label class="filter-item-title" for="brand-Hitachi">
+                  <input type="checkbox" id="brand-Hitachi" name="manufacturer" value="Hitachi">
+                  <span>Hitachi</span>
+                </label>
+              </div>
+            </div>
+            <div class="filter-power">
+              <h3 class="filter-title">Питание:</h3>
+              <div class="power-type-list">
+                <label class="filter-item-title" for="Battery-power">
+                  <input type="radio" id="Battery-power" name="power-type" value="Battery">
+                  <span>Аккумуляторные</span>
+                </label>
+                <label class="filter-item-title" for="Wire-power">
+                  <input type="radio" id="Wire-power" name="power-type" value="Wired">
+                  <span>Сетевые</span>
+                </label>
+              </div>
+            </div>
+            <button class="submit-filter" type="submit">Показать</button>
           </div>
-        </div>
+        </form>
         <div class="catalog-inner">
           <div class="catalog-sorting">
-            <div class="filter-header">
-              <span>Сортировка:</span>
-              <ul>
-                <li><a class="sorting-type" href="#">По цене</a></li>
-                <li><a class="sorting-type" href="#">По типу</a></li>
-                <li><a class="sorting-type" href="#">По функционалу</a></li>
-              </ul>
-              <span class="sorting-arrows">
+            <p class="filter-header">Сортировка:</p>
+            <ul class="catalog-sorting-list">
+              <li><a class="sorting-type" href="#">По цене</a></li>
+              <li><a class="sorting-type" href="#">По типу</a></li>
+              <li><a class="sorting-type" href="#">По функционалу</a></li>
+            </ul>
+            <span class="sorting-arrows">
               <a class="sorting-up" href="#"></a>
               <a class="sorting-down" href="#"></a>
             </span>
-            </div>
           </div>
           <ul class="catalog-items">
             <li class="catalog-item">
