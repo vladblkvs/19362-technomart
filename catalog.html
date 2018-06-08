@@ -28,9 +28,9 @@
           <p class="header-phone">
             +7 (812) 555-05-55
           </p>
-          <adress class="header-address">
+          <p class="header-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </adress>
+          </p>
         </div>
         <!--
         <div class="user-nav-container">
@@ -93,24 +93,24 @@
             <div class="filter-manufacturer">
               <h3 class="filter-title">Производители:</h3>
               <div class="manufacturer-list">
-                <label class="filter-item-title" for="brand-Bosch">
-                  <input type="checkbox" id="brand-Bosch" name="manufacturer" value="Bosch">
+                <label class="filter-item-title" for="brand-bosch">
+                  <input type="checkbox" id="brand-bosch" name="manufacturer" value="Bosch">
                   <span>Bosch</span>
                 </label>
-                <label class="filter-item-title" for="brand-Interskol">
-                  <input type="checkbox" id="brand-Interskol" name="manufacturer" value="Interskol">
+                <label class="filter-item-title" for="brand-interskol">
+                  <input type="checkbox" id="brand-interskol" name="manufacturer" value="Interskol">
                   <span>Интерскол</span>
                 </label>
-                <label class="filter-item-title" for="brand-Makita">
-                  <input type="checkbox" id="brand-Makita" name="manufacturer" value="Makita">
+                <label class="filter-item-title" for="brand-makita">
+                  <input type="checkbox" id="brand-makita" name="manufacturer" value="Makita">
                   <span>Makita</span>
                 </label>
-                <label class="filter-item-title" for="brand-Dewalt">
-                  <input type="checkbox" id="brand-Dewalt" name="manufacturer" value="Dewalt">
+                <label class="filter-item-title" for="brand-dewalt">
+                  <input type="checkbox" id="brand-dewalt" name="manufacturer" value="Dewalt">
                   <span>Dewalt</span>
                 </label>
-                <label class="filter-item-title" for="brand-Hitachi">
-                  <input type="checkbox" id="brand-Hitachi" name="manufacturer" value="Hitachi">
+                <label class="filter-item-title" for="brand-hitachi">
+                  <input type="checkbox" id="brand-hitachi" name="manufacturer" value="Hitachi">
                   <span>Hitachi</span>
                 </label>
               </div>
@@ -118,12 +118,12 @@
             <div class="filter-power">
               <h3 class="filter-title">Питание:</h3>
               <div class="power-type-list">
-                <label class="filter-item-title" for="Battery-power">
-                  <input type="radio" id="Battery-power" name="power-type" value="Battery">
+                <label class="filter-item-title">
+                  <input type="radio" name="power-type" value="Battery">
                   <span>Аккумуляторные</span>
                 </label>
-                <label class="filter-item-title" for="Wire-power">
-                  <input type="radio" id="Wire-power" name="power-type" value="Wired">
+                <label class="filter-item-title">
+                  <input type="radio" name="power-type" value="Wired">
                   <span>Сетевые</span>
                 </label>
               </div>
@@ -289,10 +289,10 @@
   </main>
 
   <section class="modal modal-cart">
-    <h2>Товар добавлен в корзину!</h2>
-    <button class="order" type="submit">Оформить заказ</button>
-    <button class="continue-shoping" type="button">Продолжить покупки</button>
-    <span class="modal-close">x</span>
+    <h2 class="modal-cart-title">Товар добавлен в корзину!</h2>
+    <a class="order-btn" href="#">Оформить заказ</a>
+    <button class="continue-shopping" type="button">Продолжить покупки</button>
+    <button class="modal-close">Закрыть</button>
   </section>
 
   <footer class="main-footer">
