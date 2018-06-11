@@ -11,7 +11,10 @@
     <section class="top-bar">
       <div class="container">
         <a class="logo"><img src="img/logo.svg" width="110" height="17" alt="Техномарт"></a>
-        <div class="search-form">Поиск:</div>
+        <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input id="search" type="search" name="search" placeholder="Поиск:">
+        </form>
         <ul class="top-user-menu">
           <li class="bookmarks"><a href="#">Закладки: <span>0</span></a></li>
           <li class="cart"><a href="#">Корзина: <span>0</span></a></li>
@@ -149,7 +152,9 @@
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
               </div>
-              <figure class="popular-item-img"><img src="img/bfg9000.png" width="218" alt="Перфоратор BOSCH BFG 9000"></figure>
+              <a href="#">
+                <figure class="popular-item-img"><img src="img/bfg9000.png" width="218" alt="Перфоратор BOSCH BFG 9000"></figure>
+              </a>
               <h3 class="popular-item-title">Перфоратор BOSCH BFG 9000</h3>
               <p class="old-price">
                 32500 Р.
@@ -163,7 +168,9 @@
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
               </div>
-              <figure class="popular-item-img"><img src="img/bfg3000.png" width="218" alt="Перфоратор BOSCH BFG 3000"></figure>
+              <a href="#">
+                <figure class="popular-item-img"><img src="img/bfg3000.png" width="218" alt="Перфоратор BOSCH BFG 3000"></figure>
+              </a>
               <h3 class="popular-item-title">Перфоратор BOSCH BFG 3000</h3>
               <p class="old-price">
                 22500 Р.
@@ -177,7 +184,9 @@
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
               </div>
-              <figure class="popular-item-img"><img src="img/bfg6000.png" width="218" alt="Перфоратор BOSCH BFG 6000"></figure>
+              <a href="#">
+                <figure class="popular-item-img"><img src="img/bfg6000.png" width="218" alt="Перфоратор BOSCH BFG 6000"></figure>
+              </a>
               <h3 class="popular-item-title">Перфоратор BOSCH BFG 6000</h3>
               <p class="old-price">
                 30500 Р.
@@ -191,7 +200,9 @@
                 <a class="buy" href="#">Купить</a>
                 <a class="bookmark" href="#">В закладки</a>
               </div>
-              <figure class="popular-item-img"><img src="img/bfg2000.png" width="218" alt="Перфоратор BOSCH BFG 2000"></figure>
+              <a href="#">
+                <figure class="popular-item-img"><img src="img/bfg2000.png" width="218" alt="Перфоратор BOSCH BFG 2000"></figure>
+              </a>
               <h3 class="popular-item-title">Перфоратор BOSCH BFG 2000</h3>
               <p class="new-price">
                 12500 Р.
@@ -315,7 +326,12 @@
   <section class="modal-write-us">
     <h2 class="visually-hidden">Напишите нам!</h2>
     <button class="modal-close">Закрыть</button>
-    <button class="send" type="submit">Отправить</button>
+    <form class="contact-form" method="POST" action="https://echo.htmlacademy.ru">
+      <input class="input" type="text" name="client-name" placeholder="Имя Фамилия">
+      <input class="input" type="email" name="email" placeholder="email@example.com" required>
+      <input class="input message-field" type="text" name="message" placeholder="В свободной форме" required>
+      <button class="send" type="submit">Отправить</button>
+    </form>
   </section>
 
   <footer class="main-footer">
