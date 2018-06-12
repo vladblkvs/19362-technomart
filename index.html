@@ -311,7 +311,7 @@
           <a class="contacts-map" href="#">
             <img src="img/map-mini.png" width="300" height="158" alt="Открыть карту проезда">
           </a>
-          <a class="write-us" href="#">Напишите нам!</a>
+          <a class="write-us" href="form.html">Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -319,18 +319,23 @@
 
   <section class="modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
     <img src="img/map-popup.png" width="940" height="446" alt="Карта проезда">
   </section>
 
   <section class="modal-write-us">
     <h2 class="visually-hidden">Напишите нам!</h2>
-    <button class="modal-close">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
     <form class="contact-form" method="POST" action="https://echo.htmlacademy.ru">
-      <input class="input" type="text" name="client-name" placeholder="Имя Фамилия">
-      <input class="input" type="email" name="email" placeholder="email@example.com" required>
-      <input class="input message-field" type="text" name="message" placeholder="В свободной форме" required>
-      <button class="send" type="submit">Отправить</button>
+      <div class="form-sect">
+      <label class="contact-form-label" for="client-name">Ваше имя:</label>
+      <input class="input" id="client-name" type="text" name="client-name" placeholder="Имя Фамилия">
+      <label class="contact-form-label" for="email">Ваш e-mail:</label>
+      <input class="input" id="email" type="email" name="email" placeholder="email@example.com" required>
+      <label class="contact-form-label" for="message">Ваш e-mail:</label>
+      <textarea class="input message-field" id="message" name="message" placeholder="В свободной форме" required></textarea>
+      </div>
+      <span class="form-sect-gray"><button class="send" type="submit">Отправить</button></span>
     </form>
   </section>
 
@@ -339,9 +344,9 @@
       <div class="container">
         <div class="footer-brand-container">
           <a class="footer-logo"><img src="img/logo.svg" width="138" height="21" alt="Техномарт"></a>
-          <address class="footer-address">
+          <p class="footer-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br> +7 (812) 555-05-55
-          </address>
+          </p>
         </div>
         <nav class="footer-navigation">
           <ul class="footer-nav-main">
