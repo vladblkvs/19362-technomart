@@ -328,12 +328,18 @@
     <button class="modal-close" type="button">Закрыть</button>
     <form class="contact-form" method="POST" action="https://echo.htmlacademy.ru">
       <div class="form-sect">
-      <label class="contact-form-label" for="client-name">Ваше имя:</label>
-      <input class="input" id="client-name" type="text" name="client-name" placeholder="Имя Фамилия">
-      <label class="contact-form-label" for="email">Ваш e-mail:</label>
-      <input class="input" id="email" type="email" name="email" placeholder="email@example.com" required>
-      <label class="contact-form-label" for="message">Текст письма:</label>
-      <textarea class="input message-field" id="message" name="message" placeholder="В свободной форме" required></textarea>
+        <div class="input-sect">
+          <label class="contact-form-label" for="client-name">Ваше имя:</label>
+          <input class="input" id="client-name" type="text" name="client-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="input-sect">
+          <label class="contact-form-label" for="email">Ваш e-mail:</label>
+          <input class="input" id="email" type="email" name="email" placeholder="email@example.com" required>
+        </div>
+        <div class="input-sect">
+          <label class="contact-form-label" for="message">Текст письма:</label>
+          <textarea class="input message-field" id="message" name="message" placeholder="В свободной форме" required></textarea>
+        </div>
       </div>
       <span class="form-sect-gray"><button class="send" type="submit">Отправить</button></span>
     </form>
