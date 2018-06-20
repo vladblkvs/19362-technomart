@@ -30,6 +30,10 @@ a {
 
 /*--HEADER--*/
 
+.main-header {
+  min-height: 320px;
+}
+
 .main-navigation-list,
 .top-user-menu,
 .user-navigation,
@@ -52,6 +56,8 @@ a {
 }
 
 .top-bar {
+  min-height: 42px;
+  padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -59,7 +65,37 @@ a {
   background-color: #293449;
 }
 
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+}
+
+.top-user-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-basis: 450px;
+  margin: 0;
+}
+
+.top-user-menu li {
+  flex-basis: 150px;
+  height: 42px;
+  text-align: center;
+}
+
+.top-user-menu a {
+  display: block;
+  height: 100%;
+}
+
 .logo {
+  width: 220px;
+  height: 42px;
+  margin: 0;
+  padding: 0;
   background-color: #ee3643;
 }
 
@@ -72,9 +108,14 @@ a {
   background-color: #ba2732;
 }
 
+.search-form {
+  flex-basis: 270px;
+}
+
 .search-form input {
-  background: transparent;
+  min-height: 42px;
   border: none;
+  background: transparent;
 }
 
 .search-form input::placeholder {
@@ -156,7 +197,6 @@ a {
 
 .logout a {
   display: block;
-  font-size: 0px;
   width: 45px;
   height: 45px;
   background: url(../img/icon-logout.svg) 50% no-repeat;
@@ -277,7 +317,6 @@ a {
 
 .icon-home a {
   display: block;
-  font-size: 0px;
   width: 18px;
   height: 18px;
   background: url(../img/icon-home.svg) 50% no-repeat;
@@ -373,7 +412,6 @@ a {
 .slider-toggles button,
 .slider-controls button {
   padding: 5px;
-  font-size: 0;
   border: none;
 }
 
@@ -770,7 +808,6 @@ a {
 }
 
 .modal-close {
-  font-size: 0px;
   width: 21px;
   height: 21px;
   border: none;
@@ -850,10 +887,6 @@ a {
   text-decoration: none;
 }
 
-.social {
-  font-size: 0px;
-}
-
 .social a {
   display: block;
   width: 42px;
@@ -878,4 +911,11 @@ a {
 
 .insta {
   background: url(../img/icon-insta.svg) 50% no-repeat;
+}
+
+
+/*--MODAL--*/
+
+.modal {
+  position: absolute;
 }
