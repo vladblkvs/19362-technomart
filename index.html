@@ -15,7 +15,7 @@
       <div class="container">
         <a class="logo"><img src="img/logo.svg" width="110" height="17" alt="Техномарт"></a>
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="search">Поиск</label>
+          <label for="search"><span class="visually-hidden">Поиск</span></label>
           <input id="search" type="search" name="search" placeholder="Поиск:">
         </form>
         <ul class="top-user-menu">
@@ -27,25 +27,25 @@
     </section>
     <section class="top-content">
       <div class="container">
-        <p class="shop-description">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </p>
-        <div class="header-contacts">
-          <p class="header-phone">
-            +7 (812) 555-05-55
+        <div class="shop-nav">
+          <p class="shop-description">
+            Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
           </p>
-          <p class="header-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
+          <div class="header-contacts">
+            <p class="header-phone">
+              +7 (812) 555-05-55
+            </p>
+            <p class="header-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="user-nav-container">
+            <ul class="user-navigation">
+              <li class="login-link"><a href="#">Войти</a></li>
+              <li class="registration-link"><a href="#">Регистрация</a></li>
+            </ul>
+          </div>
         </div>
-
-        <div class="user-nav-container">
-          <ul class="user-navigation">
-            <li class="login-link"><a href="#">Войти</a></li>
-            <li class="registration-link"><a href="#">Регистрация</a></li>
-          </ul>
-        </div>
-
         <nav class="main-navigation">
           <ul class="main-navigation-list">
             <li><a href="#">Главная</a></li>
@@ -89,7 +89,7 @@
               <button class="slider-next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
             </div>
             <div class="slides">
-              <div class="slide">
+              <div class="slide slide1">
                 <figure class="slide-img">
                   <img src="img/banner1.jpg" width="620" height="266" alt="Перфораторы">
                 </figure>
@@ -101,7 +101,7 @@
                   <a href="#" class="btn slide-btn">Открыть каталог</a>
                 </div>
               </div>
-              <div class="slide">
+              <div class="slide slide2">
                 <figure class="slide-img">
                   <img src="img/banner2.jpg" width="620" height="266" alt="Дрели">
                 </figure>
@@ -116,22 +116,20 @@
             </div>
           </div>
         </div>
-        <div class="promo-block-right">
-          <ul class="promo-items">
-            <li class="promo-item promo-third">
-              <h3 class="promo-item-title">Техника</h3>
-              <a class="promo-block-btn" href="#">Для стройки</a>
-            </li>
-            <li class="promo-item promo-fourth">
-              <h3 class="promo-item-title">Скидки 50%</h3>
-              <a class="promo-block-btn" href="#">на 350 товаров</a>
-            </li>
-            <li class="promo-item promo-fifth">
-              <h3 class="promo-item-title">Доставка</h3>
-              <a class="promo-block-btn" href="#">Бесплатно</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="promo-block-right promo-items">
+          <li class="promo-item promo-third">
+            <h3 class="promo-item-title">Техника</h3>
+            <a class="promo-block-btn" href="#">Для стройки</a>
+          </li>
+          <li class="promo-item promo-fourth">
+            <h3 class="promo-item-title">Скидки 50%</h3>
+            <a class="promo-block-btn" href="#">на 350 товаров</a>
+          </li>
+          <li class="promo-item promo-fifth">
+            <h3 class="promo-item-title">Доставка</h3>
+            <a class="promo-block-btn" href="#">Бесплатно</a>
+          </li>
+        </ul>
       </div>
       <div class="popular-goods-block">
         <header class="popular-header">
@@ -246,35 +244,33 @@
             <li class="services-slider-btn"><a href="#slide2">Гарантия</a></li>
             <li class="services-slider-btn"><a href="#slide3">Кредит</a></li>
           </ul>
-
-          <div id="slide1" class="slide-delivery">
-            <h3 class="service-title">Доставка</h3>
-            <p class="slide-description">
-              Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!
-            </p>
-            <p class="slide-description">
-              Ведь мы неплохо заработаем,<br> поднимая его на ваш на этаж!
-            </p>
+          <div class="services-slides">
+            <div id="slide1" class="services-slide slide-delivery">
+              <h3 class="service-title">Доставка</h3>
+              <p class="slide-description">
+                Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!
+              </p>
+              <p class="slide-description">
+                Ведь мы неплохо заработаем,<br> поднимая его на ваш на этаж!
+              </p>
+            </div>
+            <div id="slide2" class="services-slide slide-guarantee">
+              <h3 class="service-title">Гарантия</h3>
+              <p class="slide-description">
+                Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              </p>
+              <p class="slide-description">
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </div>
+            <div id="slide3" class="services-slide slide-credit">
+              <h3 class="service-title">Кредит</h3>
+              <p class="slide-description">
+                Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="btn credit-request" href="#">Отправить заявку</a>
+            </div>
           </div>
-
-          <div id="slide2" class="slide-guarantee">
-            <h3 class="service-title">Гарантия</h3>
-            <p class="slide-description">
-              Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-            </p>
-            <p class="slide-description">
-              Дом уж восстановите как-нибудь сами.
-            </p>
-          </div>
-
-          <div id="slide3" class="slide-credit">
-            <h3 class="service-title">Кредит</h3>
-            <p class="slide-description">
-              Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.
-            </p>
-            <a class="btn credit-request" href="#">Отправить заявку</a>
-          </div>
-
         </div>
       </div>
     </section>
@@ -307,7 +303,7 @@
       </div>
     </section>
   </main>
-
+  <!-- Модальные окна временно скрыты
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -335,7 +331,7 @@
       <div class="submit-sect"><button class="btn send-message" type="submit">Отправить</button></div>
     </form>
   </section>
-
+  -->
   <footer class="main-footer">
     <section class="footer-nav">
       <div class="container">
@@ -346,14 +342,14 @@
           </p>
         </div>
         <nav class="footer-navigation">
-          <ul class="footer-nav-main">
+          <ul class="footer-menu-main">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="footer-nav-add">
+          <ul class="footer-menu-add">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -364,23 +360,21 @@
     </section>
     <section class="copy-social">
       <div class="container">
-        <div class="copy-social-container">
-          <p class="copy">
-            © 2010–2017 Компания «Техномарт» Все права защищены.
+        <p class="copy">
+          © 2010–2017 Компания «Техномарт» Все права защищены.
+        </p>
+        <ul class="social">
+          <li><a class="vk" href="#" title="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="fb" href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="insta" href="#" title="Instagram"><span class="visually-hidden">Instagram</span></a></li>
+        </ul>
+        <div class="feedback">
+          <p class="feedback-link">
+            Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <ul class="social">
-            <li><a class="vk" href="#" title="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="fb" href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a class="insta" href="#" title="Instagram"><span class="visually-hidden">Instagram</span></a></li>
-          </ul>
-          <div class="feedback">
-            <p class="feedback-link">
-              Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="feedback-link">
-              Разработано — <a href="htmlacademy.ru">htmlacademy.ru</a>
-            </p>
-          </div>
+          <p class="feedback-link">
+            Разработано — <a href="htmlacademy.ru">htmlacademy.ru</a>
+          </p>
         </div>
       </div>
     </section>

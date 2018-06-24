@@ -15,7 +15,7 @@
       <div class="container">
         <a class="logo" href="index.html"><img src="img/logo.svg" width="110" height="17" alt="Техномарт"></a>
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="search">Поиск</label>
+          <label for="search"><span class="visually-hidden">Поиск</span></label>
           <input id="search" type="search" name="search" placeholder="Поиск:">
         </form>
         <ul class="top-user-menu">
@@ -27,27 +27,28 @@
     </section>
     <section class="top-content">
       <div class="container">
-        <p class="shop-description">
-          Интернет-магазин строительных материалов и инструментов для ремонта
-        </p>
-        <div class="header-contacts">
-          <p class="header-phone">
-            +7 (812) 555-05-55
+        <div class="shop-nav">
+          <p class="shop-description">
+            Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта
           </p>
-          <p class="header-address">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-        </div>
-
-        <div class="user-nav-container">
-          <ul class="user-navigation">
-            <li class="user-name"><a href="#">Равшан Джамшутович</a></li>
-            <li class="logout"><a href="#"><span class="visually-hidden">Выйти</span></a></li>
-          </ul>
-          <ul class="user-menu">
-            <li><a href="#">Мои заказы</a></li>
-            <li><a href="#">Личный кабинет</a></li>
-          </ul>
+          <div class="header-contacts">
+            <p class="header-phone">
+              +7 (812) 555-05-55
+            </p>
+            <p class="header-address">
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </p>
+          </div>
+          <div class="user-nav-container">
+            <ul class="user-navigation">
+              <li class="user-name"><a href="#">Равшан Джамшутович</a></li>
+              <li class="logout"><a href="#"><span class="visually-hidden">Выйти</span></a></li>
+            </ul>
+            <ul class="user-menu">
+              <li><a href="#">Мои заказы</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
         </div>
 
         <nav class="main-navigation">
@@ -312,7 +313,7 @@
       </div>
     </section>
   </main>
-
+  <!-- Модальные окна временно скрыты
   <section class="modal modal-cart">
     <div clas="modal-sect">
       <h2 class="modal-cart-title">Товар добавлен в корзину!</h2>
@@ -323,7 +324,7 @@
       <button class="continue-shopping" type="button">Продолжить покупки</button>
     </div>
   </section>
-
+  -->
   <footer class="main-footer">
     <section class="footer-nav">
       <div class="container">
@@ -334,14 +335,14 @@
           </p>
         </div>
         <nav class="footer-navigation">
-          <ul class="footer-nav-main">
+          <ul class="footer-menu-main">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="footer-nav-add">
+          <ul class="footer-menu-add">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -352,23 +353,21 @@
     </section>
     <section class="copy-social">
       <div class="container">
-        <div class="copy-social-container">
-          <p class="copy">
-            © 2010–2017 Компания «Техномарт» Все права защищены.
+        <p class="copy">
+          © 2010–2017 Компания «Техномарт» Все права защищены.
+        </p>
+        <ul class="social">
+          <li><a class="vk" href="#" title="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="fb" href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="insta" href="#" title="Instagram"><span class="visually-hidden">Instagram</span></a></li>
+        </ul>
+        <div class="feedback">
+          <p class="feedback-link">
+            Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <ul class="social">
-            <li><a class="vk" href="#" title="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="fb" href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a class="insta" href="#" title="Instagram"><span class="visually-hidden">Instagram</span></a></li>
-          </ul>
-          <div class="feedback">
-            <p class="feedback-link">
-              Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p class="feedback-link">
-              Разработано — <a href="htmlacademy.ru">htmlacademy.ru</a>
-            </p>
-          </div>
+          <p class="feedback-link">
+            Разработано — <a href="htmlacademy.ru">htmlacademy.ru</a>
+          </p>
         </div>
       </div>
     </section>
