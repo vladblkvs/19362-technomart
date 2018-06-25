@@ -1059,7 +1059,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-basis: 598px;
+  flex-basis: 272px;
 }
 
 .services-slider-btn a {
@@ -1082,6 +1082,10 @@ a {
 }
 
 .services-slider-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   flex-basis: 240px;
   margin: 0;
   padding: 0;
