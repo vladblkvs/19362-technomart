@@ -31,7 +31,9 @@ a {
 /*--HEADER--*/
 
 .main-header {
-  min-height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .main-navigation-list,
@@ -54,7 +56,7 @@ a {
 }
 
 .top-bar {
-  min-height: 42px;
+  flex-basis: 42px;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
@@ -250,6 +252,7 @@ a {
 }
 
 .top-content {
+  flex-basis: 278px;
   font-family: "Cuprum", Arial, sans-serif;
   background-color: #f4f7f9;
 }
@@ -748,11 +751,15 @@ a {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 0;
   background-color: #ee3643;
 }
 
@@ -791,6 +798,11 @@ a {
   margin: 21px 0 20px;
   padding-left: 26px;
   background-color: #f9f5f0;
+}
+
+.popular-btn {
+  width: 253px;
+  margin-right: 24px;
 }
 
 .filter-header,
@@ -1110,31 +1122,87 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  width: 700px;
+  height: 272px;
 }
 
 .slide-delivery {
   z-index: 3;
-  background: url(../img/delivery-cover.png) 100% 0% no-repeat;
+  background: #f4f7f9 url(../img/delivery-cover.png) 100% 100% no-repeat;
 }
 
 .slide-guarantee {
   z-index: 2;
-  background: url(../img/guarantee-cover.png) 100% 0% no-repeat;
+  background: #f4f7f9 url(../img/guarantee-cover.png) 100% 100% no-repeat;
 }
 
 .slide-credit {
   z-index: 1;
-  background: url(../img/credit-cover.png) 100% 0% no-repeat;
+  background: #f4f7f9 url(../img/credit-cover.png) 100% 100% no-repeat;
 }
 
 .credit-request {
   background-color: #ff5357;
 }
 
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 79px;
+  padding-bottom: 74px;
+}
+
+.about-text {
+  margin: 26px 0 0;
+}
+
+.partners-text {
+  margin: 0;
+}
+
+.about-company {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-basis: 540px;
+}
+
+.about-btn {
+  width: 220px;
+}
+
+.partners-list {
+  flex-basis: 100%;
+  margin: 6px 0 22px;
+}
+
 .partners-list li {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
+  margin: 14px 0;
+}
+
+.about-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-basis: 300px;
+}
+
+.about-contacts .about-text {
+  flex-basis: 220px;
+}
+
+.contacts-map {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 31px 0 40px;
+}
+
+.write-us {
+  width: 300px;
 }
 
 .form-sect {
@@ -1221,10 +1289,17 @@ a {
   background: url(../img/icon-close.svg) 50% no-repeat;
 }
 
+.modal {
+  display: none;
+}
+
 
 /*--FOOTER--*/
 
 .main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
   display: flex;
@@ -1244,6 +1319,7 @@ a {
 }
 
 .footer-nav {
+  flex-basis: 193px;
   font-size: 18px;
   line-height: 24px;
   background-color: #32425c;
@@ -1318,6 +1394,7 @@ a {
 }
 
 .copy-social {
+  flex-basis: 107px;
   font-size: 16px;
   line-height: 18px;
   background-color: #293449;
