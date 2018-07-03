@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+	 width="40px" height="17px" viewBox="0 0 40 17" style="enable-background:new 0 0 40 17;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C5C5C5;}
+	.st1{fill:#32425C;}
+</style>
 <g>
-	<polygon fill="#32425C" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
-	<path fill="#32425C" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
-		v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+	<polygon class="st0" points="20,8.5 11.1,0 11.1,6 5.1,6 5.1,11 11.1,11 11.1,17 	"/>
+	<path class="st0" d="M2,14V3C2,2.7,2.2,2,3,2h5V0H3C0.9,0,0,1.8,0,3V14c0,1.2,0.9,3,3,3h5v-2H3C2.2,15,2,14.3,2,14z"/>
+</g>
+<g>
+	<polygon class="st1" points="40,8.5 31.1,0 31.1,6 25.1,6 25.1,11 31.1,11 31.1,17 	"/>
+	<path class="st1" d="M22,14V3C22,2.7,22.2,2,23,2h5V0h-5c-2.2,0-3,1.8-3,3V14c0,1.2,0.9,3,3,3h5v-2h-5C22.2,15,22,14.3,22,14z"/>
 </g>
 </svg>

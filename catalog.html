@@ -15,8 +15,8 @@
       <div class="container">
         <a class="logo" href="index.html"><img src="img/logo.svg" width="110" height="17" alt="Техномарт"></a>
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+          <input class="search" id="search" type="search" name="search" placeholder="Поиск:">
           <label for="search"><span class="visually-hidden">Поиск</span></label>
-          <input id="search" type="search" name="search" placeholder="Поиск:">
         </form>
         <ul class="top-user-menu">
           <li class="bookmarks"><a href="#">Закладки: <span>0</span></a></li>
@@ -87,9 +87,12 @@
           <div class="filters">
             <fieldset class="filter-price">
               <legend class="filter-title">Цена:</legend>
-              <div class="price-control">
-                <div class="price-ctrl1">Регулятор минимальной цены</div>
-                <div class="price-ctrl2">Регулятор максимальной цены</div>
+              <div class="price-controls">
+                <div class="scale">
+                  <div class="scale-bar"></div>
+                </div>
+                <div class="price-toggle min-price-toggle"><span class="visually-hidden">Регулятор минимальной цены</span></div>
+                <div class="price-toggle max-price-toggle"><span class="visually-hidden">Регулятор максимальной цены</span></div>
               </div>
               <div class="price-input-container">
                 <label class="visually-hidden" for="min-price">Минимальная цена:</label>
@@ -103,25 +106,25 @@
             <fieldset class="filter-manufacturer">
               <legend class="filter-title">Производители:</legend>
               <div class="manufacturer-list">
-                <label class="filter-item-title">
-                  <input type="checkbox" name="manufacturer" value="Bosch" checked>
-                  <span>Bosch</span>
+                <input class="checkbox" id="bosch" type="checkbox" name="manufacturer" value="Bosch" checked>
+                <label class="filter-item-title" for="bosch">
+                  Bosch
                 </label>
-                <label class="filter-item-title">
-                  <input type="checkbox" name="manufacturer" value="Interskol">
-                  <span>Интерскол</span>
+                <input class="checkbox" id="interskol" type="checkbox" name="manufacturer" value="Interskol">
+                <label class="filter-item-title" for="interskol">
+                  Интерскол
                 </label>
-                <label class="filter-item-title">
-                  <input type="checkbox" name="manufacturer" value="Makita" checked>
-                  <span>Makita</span>
+                <input class="checkbox" id="makita" type="checkbox" name="manufacturer" value="Makita" checked>
+                <label class="filter-item-title" for="makita">
+                  Makita
                 </label>
-                <label class="filter-item-title">
-                  <input type="checkbox" name="manufacturer" value="Dewalt">
-                  <span>Dewalt</span>
+                <input class="checkbox" id="dewalt" type="checkbox" name="manufacturer" value="Dewalt">
+                <label class="filter-item-title" for="dewalt">
+                  Dewalt
                 </label>
-                <label class="filter-item-title">
-                  <input type="checkbox" name="manufacturer" value="Hitachi">
-                  <span>Hitachi</span>
+                <input class="checkbox" id="hitachi" type="checkbox" name="manufacturer" value="Hitachi">
+                <label class="filter-item-title" for="hitachi">
+                  Hitachi
                 </label>
               </div>
             </fieldset>
@@ -129,13 +132,13 @@
             <fieldset class="filter-power">
               <legend class="filter-title">Питание:</legend>
               <div class="power-type-list">
-                <label class="filter-item-title">
-                  <input type="radio" name="power-type" value="Battery" checked>
-                  <span>Аккумуляторные</span>
+                <input class="radio" id="battery" type="radio" name="power-type" value="Battery" checked>
+                <label class="filter-item-title" for="battery">
+                  Аккумуляторные
                 </label>
-                <label class="filter-item-title">
-                  <input type="radio" name="power-type" value="Wired">
-                  <span>Сетевые</span>
+                <input class="radio" id="wired" type="radio" name="power-type" value="Wired">
+                <label class="filter-item-title" for="wired">
+                  Сетевые
                 </label>
               </div>
             </fieldset>
@@ -151,8 +154,8 @@
               <li><a class="sorting-type" href="#">По функционалу</a></li>
             </ul>
             <span class="sorting-arrows">
-              <a class="sorting-up" href="#"></a>
-              <a class="sorting-down" href="#"></a>
+            <a class="sorting-up sorting-active" href="#"><span class="visually-hidden">Сортировака по возрастанию</span></a>
+            <a class="sorting-down" href="#"><span class="visually-hidden">Сортировака по убыванию</span></a>
             </span>
           </div>
           <ul class="catalog-items">
@@ -356,9 +359,14 @@
     </section>
     <section class="copy-social">
       <div class="container">
-        <p class="copy">
-          © 2010–2017 Компания «Техномарт» Все права защищены.
-        </p>
+        <div class="copy">
+          <p class="copy-text">
+            © 2010–2017 Компания «Техномарт»
+          </p>
+          <p class="copy-text">
+            Все права защищены
+          </p>
+        </div>
         <ul class="social">
           <li><a class="vk" href="#" title="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
           <li><a class="fb" href="#" title="Facebook"><span class="visually-hidden">Facebook</span></a></li>
