@@ -755,7 +755,9 @@ a {
   flex-basis: 266px;
   position: relative;
 }
-
+.slider button {
+cursor: pointer;
+}
 .slider-toggles,
 .slider-controls {
   position: absolute;
@@ -994,11 +996,13 @@ a {
   background: url(../img/checkbox.svg) bottom left no-repeat;
 }
 
-.checkbox:hover+.filter-item-title::before {
+.checkbox:hover+.filter-item-title::before,
+.checkbox:focus+.filter-item-title::before {
   background: url(../img/checkbox.svg) top right no-repeat;
 }
 
-.checkbox:checked:hover+.filter-item-title::before {
+.checkbox:checked:hover+.filter-item-title::before,
+.checkbox:checked:focus+.filter-item-title::before{
   background: url(../img/checkbox.svg) bottom right no-repeat;
 }
 
@@ -1010,11 +1014,13 @@ a {
   background: url(../img/radio.svg) bottom left no-repeat;
 }
 
-.radio:hover+.filter-item-title::before {
+.radio:hover+.filter-item-title::before,
+.radio:focus+.filter-item-title::before {
   background: url(../img/radio.svg) top right no-repeat;
 }
 
-.radio:checked:hover+.filter-item-title::before {
+.radio:checked:hover+.filter-item-title::before,
+.radio:checked:focus+.filter-item-title::before {
   background: url(../img/radio.svg) bottom right no-repeat;
 }
 
@@ -1025,10 +1031,12 @@ a {
   flex-direction: column;
 }
 
+/*
+Прошлое решение с плохой доступностью
 .manufacturer-list input[type="checkbox"],
 .power-type-list input[type="radio"] {
   display: none;
-}
+}*/
 
 .filter-submit {
   line-height: 18px;
