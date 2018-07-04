@@ -755,9 +755,11 @@ a {
   flex-basis: 266px;
   position: relative;
 }
+
 .slider button {
-cursor: pointer;
+  cursor: pointer;
 }
+
 .slider-toggles,
 .slider-controls {
   position: absolute;
@@ -1002,7 +1004,7 @@ cursor: pointer;
 }
 
 .checkbox:checked:hover+.filter-item-title::before,
-.checkbox:checked:focus+.filter-item-title::before{
+.checkbox:checked:focus+.filter-item-title::before {
   background: url(../img/checkbox.svg) bottom right no-repeat;
 }
 
@@ -1030,6 +1032,7 @@ cursor: pointer;
   flex-wrap: wrap;
   flex-direction: column;
 }
+
 
 /*
 Прошлое решение с плохой доступностью
@@ -1584,111 +1587,6 @@ cursor: pointer;
   background-color: #ee3643;
 }
 
-.about-contacts .about-text {
-  width: 220px;
-}
-
-.contacts-map {
-  display: block;
-  margin: 31px 0 40px;
-}
-
-.contacts-map img {
-  vertical-align: top;
-}
-
-.write-us {
-  width: 300px;
-}
-
-.form-sect {
-  background-color: #ffffff;
-}
-
-.submit-sect {
-  background-color: #f4f4f4;
-}
-
-.order-sect {
-  background-color: #f1f1f1;
-}
-
-.contact-form-label {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-}
-
-.input {
-  border: 2px solid #dee3e4;
-  border-radius: 3px;
-}
-
-.input:hover {
-  border-color: #b5b5b5;
-}
-
-.input:focus {
-  border-color: #ee3744;
-}
-
-.input::placeholder {
-  font-size: 13px;
-  line-height: 18px;
-  color: #a9a9a9;
-}
-
-.send-message {
-  border: none;
-}
-
-.continue-shopping {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  border: none;
-  background-color: #ffffff;
-}
-
-.continue-shopping:hover,
-.continue-shopping:focus {
-  color: #ee3643;
-}
-
-.continue-shopping:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.modal-sect {
-  background-color: #ffffff;
-}
-
-.modal-cart-title {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.modal-cart-title::before {
-  content: "";
-  display: inline-block;
-  width: 66px;
-  height: 66px;
-  background: url(../img/icon-mark.svg) 50% no-repeat;
-}
-
-.modal-close {
-  width: 21px;
-  height: 21px;
-  border: none;
-  background: url(../img/icon-close.svg) 50% no-repeat;
-}
-
-.modal {
-  display: none;
-}
-
 
 /*--FOOTER--*/
 
@@ -1885,4 +1783,147 @@ cursor: pointer;
 
 .modal {
   position: absolute;
+  top: 0;
+}
+
+.modal-map {
+  display: none;
+}
+
+.modal-write-us {
+  z-index: 4;
+  top: 20%;
+  left: calc(50% - 310px);
+  display: none;
+}
+
+.modal-sect {
+  background-color: #ffffff;
+}
+
+.modal-cart-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart-title::before {
+  content: "";
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  background: url(../img/icon-mark.svg) 50% no-repeat;
+}
+
+.contact-form {
+  background-color: #ffffff;
+}
+
+.contact-form-label {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.input-sect {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin: 0;
+}
+
+.input-sect:nth-child(2n) .input {
+  margin-left: 20px;
+}
+
+.message-field {
+  max-width: 452px;
+  height: 106px;
+}
+
+.send-message {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.about-contacts .about-text {
+  width: 220px;
+}
+
+.contacts-map {
+  display: block;
+  margin: 31px 0 40px;
+}
+
+.contacts-map img {
+  vertical-align: top;
+}
+
+.write-us {
+  width: 300px;
+}
+
+.form-sect {
+  display: flex;
+  flex-wrap: wrap;
+  width: 460px;
+  padding: 46px 80px 37px;
+  background-color: #ffffff;
+}
+
+.submit-sect {
+  width: 460px;
+  padding: 37px 80px;
+  background-color: #f4f4f4;
+}
+
+.order-sect {
+  background-color: #f1f1f1;
+}
+
+.input,
+.message-field {
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.input:hover {
+  border-color: #b5b5b5;
+}
+
+.input:focus {
+  border-color: #ee3744;
+}
+
+.input::placeholder {
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+
+.continue-shopping {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #ffffff;
+}
+
+.continue-shopping:hover,
+.continue-shopping:focus {
+  color: #ee3643;
+}
+
+.continue-shopping:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background: url(../img/icon-close.svg) 50% no-repeat;
+  cursor: pointer;
 }
