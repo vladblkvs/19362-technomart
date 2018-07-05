@@ -142,6 +142,7 @@ a {
 
 .search-form input {
   width: 100%;
+  color: #ffffff;
   border: none;
   background: transparent;
 }
@@ -161,6 +162,7 @@ a {
 }
 
 .search-form input:focus {
+  color: #000000;
   background-color: #ffffff;
 }
 
