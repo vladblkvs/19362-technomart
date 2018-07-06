@@ -1534,17 +1534,17 @@ a {
 
 .slide-delivery {
   display: none;
-  background: #f4f7f9 url(../img/delivery-cover.png) 100% 100% no-repeat;
+  background: #f4f7f9 url(../img/delivery-cover.png) top 38px right no-repeat;
 }
 
 .slide-guarantee {
   display: none;
-  background: #f4f7f9 url(../img/guarantee-cover.png) 100% 100% no-repeat;
+  background: #f4f7f9 url(../img/guarantee-cover.png) top 38px right no-repeat;
 }
 
 .slide-credit {
   display: none;
-  background: #f4f7f9 url(../img/credit-cover.png) 100% 100% no-repeat;
+  background: #f4f7f9 url(../img/credit-cover.png) top 38px right no-repeat;
 }
 
 .services-slide {
@@ -1554,6 +1554,8 @@ a {
 }
 
 .credit-request {
+  width: 195px;
+  margin-top: 26px;
   background-color: #ff5357;
 }
 
