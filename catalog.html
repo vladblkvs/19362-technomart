@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -321,7 +322,7 @@
   </main>
 
   <section class="modal modal-cart">
-    <div clas="modal-sect">
+    <div class="modal-sect">
       <h2 class="modal-cart-title">Товар добавлен в корзину!</h2>
     </div>
     <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -383,6 +384,32 @@
       </div>
     </section>
   </footer>
+
+  <script>
+    var buyLink = document.querySelector(".buy");
+    var buyPopup = document.querySelector(".modal-cart");
+    var buyClose = buyPopup.querySelector(".modal-close");
+
+    buyLink.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      buyPopup.classList.add("modal-show");
+    });
+
+    buyClose.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      buyPopup.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function(evt) {
+      evt.preventDefault();
+      if (evt.keyCode === 27) {
+        if (buyPopup.classList.contains("modal-show")) {
+          buyPopup.classList.remove("modal-show");
+        }
+      }
+    });
+  </script>
+
 </body>
 
 </html>
