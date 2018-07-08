@@ -1,11 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  margin: 0;
+  padding: 0;
   background-color: #ffffff;
 }
 
@@ -101,28 +101,28 @@ a {
 }
 
 .logo::after {
-  content: "";
-  display: block;
   position: absolute;
   top: 42px;
+  content: "";
+  display: block;
   width: 220px;
   height: 5px;
   background-color: #b52933;
 }
 
 .search-form {
-  flex-basis: 270px;
   position: relative;
+  flex-basis: 270px;
 }
 
 .search-form label::before {
-  content: "";
-  display: block;
   position: absolute;
-  width: 17px;
-  height: 17px;
   top: 12px;
   left: 17px;
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
   background: url(../img/icon-search.svg) left no-repeat;
   opacity: 0.3;
 }
@@ -376,10 +376,10 @@ a {
 }
 
 .user-menu li:last-child::before {
-  content: "";
-  display: block;
   position: absolute;
   top: 9px;
+  content: "";
+  display: block;
   width: 4px;
   height: 4px;
   border-radius: 50%;
@@ -388,9 +388,9 @@ a {
 
 .shop-description {
   flex-basis: 200px;
-  font-style: italic;
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
   color: #ee3643;
   margin: 0;
   padding-top: 3px;
@@ -754,8 +754,8 @@ a {
 }
 
 .slider {
-  flex-basis: 266px;
   position: relative;
+  flex-basis: 266px;
 }
 
 .slider button {
@@ -775,11 +775,9 @@ a {
 
 .slider-toggles {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  justify-content: space-between;
   top: 114px;
   width: 620px;
-  justify-content: space-between;
 }
 
 .slider-toggles button,
@@ -808,8 +806,8 @@ a {
 }
 
 .slider-btn.active-slide {
-  box-shadow: inset 0 0 0 2px #ffffff;
   background-color: #ee3643;
+  box-shadow: inset 0 0 0 2px #ffffff;
 }
 
 .slider-btn:not(:first-child) {
@@ -978,6 +976,7 @@ a {
 .filter-item-title {
   font-size: 15px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .filter-item-title:not(:first-of-type) {
@@ -1059,14 +1058,6 @@ a {
   flex-direction: column;
 }
 
-
-/*
-Прошлое решение с плохой доступностью
-.manufacturer-list input[type="checkbox"],
-.power-type-list input[type="radio"] {
-  display: none;
-}*/
-
 .filter-submit {
   line-height: 18px;
   text-transform: uppercase;
@@ -1109,7 +1100,8 @@ a {
   position: absolute;
   width: 20px;
   height: 22px;
-  background: url(../img/filter-button.svg)
+  background: url(../img/filter-button.svg);
+  cursor: pointer;
 }
 
 .min-price-toggle {
@@ -1150,10 +1142,10 @@ a {
 }
 
 .price-divider {
-  flex-basis: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 30px;
 }
 
 .catalog-inner {
@@ -1212,12 +1204,12 @@ a {
 }
 
 .new-item::before {
-  content: "";
-  display: block;
   position: absolute;
-  z-index: 3;
   top: -1px;
   right: 0;
+  z-index: 3;
+  content: "";
+  display: block;
   width: 60px;
   height: 60px;
   background: url(../img/new-flag.png) 50% no-repeat;
@@ -1270,9 +1262,9 @@ a {
 
 .catalog-item:hover .catalog-item-links,
 .catalog-item:focus .catalog-item-links {
-  display: block;
   position: absolute;
   z-index: 2;
+  display: block;
   padding: 43px 41px 43px 41px;
   background-color: #ffffff;
 }
@@ -1290,8 +1282,8 @@ a {
   color: #ffffff;
   border-radius: 3px;
   padding: 10px 45px 10px 14px;
-  box-shadow: inset 0 -3px 0 #367315;
   background-color: #63a63e;
+  box-shadow: inset 0 -3px 0 #367315;
 }
 
 .buy:hover,
@@ -1514,10 +1506,10 @@ a {
 }
 
 .services-slides::before {
-  content: "";
   position: absolute;
   top: -10px;
   left: -10px;
+  content: "";
   width: 10px;
   height: 272px;
   background: url(../img/services-slider-controls_shadow-right.png) right no-repeat;
@@ -1614,11 +1606,11 @@ a {
 }
 
 .partners-list li::before {
-  content: "";
-  display: block;
   position: absolute;
   top: 9px;
   left: -36px;
+  content: "";
+  display: block;
   width: 25px;
   height: 2px;
   background-color: #ee3643;
@@ -1652,8 +1644,8 @@ a {
 .footer-nav {
   font-size: 18px;
   line-height: 24px;
-  box-shadow: inset 0 1px 0 #384760;
   background-color: #32425c;
+  box-shadow: inset 0 1px 0 #384760;
 }
 
 .footer-nav a:hover,
@@ -1691,8 +1683,8 @@ a {
 .footer-navigation {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 610px;
   flex-direction: column;
+  flex-basis: 610px;
   padding-top: 37px;
 }
 
@@ -1819,20 +1811,21 @@ a {
 /*--MODAL--*/
 
 .modal {
-  display: none;
   position: relative;
   top: 0;
+  display: none;
 }
 
 .modal-show {
   display: block;
+  animation: bounce 0.5s;
 }
 
 .modal-map {
   position: fixed;
-  z-index: 5;
   top: 25%;
   left: 50%;
+  z-index: 5;
   width: 940px;
   height: 446px;
   margin-left: -470px;
@@ -1841,17 +1834,17 @@ a {
 
 .modal-write-us {
   position: fixed;
-  z-index: 5;
   top: 25%;
   left: 50%;
+  z-index: 5;
   margin-left: -310px;
 }
 
 .modal-cart {
   position: fixed;
-  z-index: 5;
   top: 25%;
   left: 50%;
+  z-index: 5;
   margin-left: -310px;
   box-shadow: 0 -7px 0 #ff5357, 0 0 16px 4px rgba(47, 42, 43, 0.3);
 }
@@ -1881,8 +1874,8 @@ a {
 }
 
 .contact-form {
-  box-shadow: 0 -7px 0 #ff5357, 0 30px 50px 15px rgba(0, 0, 0, 0.5);
   background-color: #ffffff;
+  box-shadow: 0 -7px 0 #ff5357, 0 30px 50px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form-label {
@@ -2017,10 +2010,32 @@ a {
   width: 21px;
   height: 21px;
   border: none;
-  background: url(../img/icon-close.svg) 50% no-repeat;
+  background: url(../img/icon-close.svg) left no-repeat;
   cursor: pointer;
 }
 
+.modal-close:hover,
 .modal-close:focus {
   outline: none;
+  background: url(../img/icon-close.svg) center no-repeat;
+}
+
+.modal-close:active {
+  outline: none;
+  background: url(../img/icon-close.svg) right no-repeat;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(800px);
+  }
+  70% {
+    transform: translateY(-20px);
+  }
+  90% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
