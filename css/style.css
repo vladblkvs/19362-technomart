@@ -2128,6 +2128,10 @@ img {
   box-shadow: 0 0 16px 4px rgba(47, 42, 43, 0.3);
 }
 
+.modal-map iframe {
+  border: 0;
+}
+
 .modal-write-us {
   position: fixed;
   top: 25%;
