@@ -1,3 +1,25 @@
+var sliderBtns = document.querySelectorAll(".slider-btn a");
+if (sliderBtns) {
+  var slides = document.querySelectorAll(".slide");
+
+  for (var j = 0; j < sliderBtns.length; j++) {
+    sliderBtns[j].addEventListener("click", function(evt) {
+      evt.preventDefault();
+
+      if (this.hasAttribute("data-active")) return false;
+
+      for (var k = 0; k < sliderBtns.length; k++) {
+        sliderBtns[k].removeAttribute("data-active");
+        slides[k].removeAttribute("data-active");
+      }
+
+      this.setAttribute("data-active", true);
+
+      document.querySelector(this.getAttribute("href")).setAttribute("data-active", true);
+    });
+  }
+}
+
 var serviceLinks = document.querySelectorAll(".services-slider-controls a");
 if (serviceLinks) {
   var serviceSlides = document.querySelectorAll(".services-slide");
@@ -8,7 +30,7 @@ if (serviceLinks) {
 
       if (this.hasAttribute("data-active")) return false;
 
-      for (var k = 0; serviceLinks.length; k++) {
+      for (var k = 0; k < serviceLinks.length; k++) {
         serviceLinks[k].removeAttribute("data-active");
         serviceSlides[k].removeAttribute("data-active");
       }
