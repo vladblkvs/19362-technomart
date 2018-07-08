@@ -1475,14 +1475,14 @@ a {
   background-color: #32425c;
 }
 
-.services-slider-btn a:hover,
-.services-slider-btn a:focus {
+.services-slider-btn a:hover:not([data-active]),
+.services-slider-btn a:focus:not([data-active]) {
   color: #ffffff;
   border-bottom: 1px solid #293449;
   background-color: #293449;
 }
 
-.checked-slide a,
+.services-slider-btn [data-active],
 .services-slider-btn a:active {
   color: #32425c;
   border-top: 1px solid #ffffff;
@@ -1503,6 +1503,12 @@ a {
   position: relative;
   display: flex;
   flex-basis: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+.services-slides [data-active] {
+  display: flex;
 }
 
 .services-slides::before {
@@ -1540,7 +1546,7 @@ a {
 }
 
 .services-slide {
-  display: block;
+  display: none;
   flex-basis: 620px;
   padding: 30px 0 0 80px;
 }

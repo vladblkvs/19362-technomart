@@ -1,3 +1,26 @@
+var serviceLinks = document.querySelectorAll(".services-slider-controls a");
+if (serviceLinks) {
+  var serviceSlides = document.querySelectorAll(".services-slide");
+
+  for (var j = 0; j < serviceLinks.length; j++) {
+    serviceLinks[j].addEventListener("click", function(evt) {
+      evt.preventDefault();
+
+      if (this.hasAttribute("data-active")) return false;
+
+      for (var k = 0; serviceLinks.length; k++) {
+        serviceLinks[k].removeAttribute("data-active");
+        serviceSlides[k].removeAttribute("data-active");
+      }
+
+      this.setAttribute("data-active", true);
+
+      document.querySelector(this.getAttribute("href")).setAttribute("data-active", true);
+    });
+  }
+}
+
+
 var buyLinkArr = document.querySelectorAll(".buy");
 
 if (buyLinkArr) {
