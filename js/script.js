@@ -114,12 +114,15 @@ if (writeLink) {
   writeClose.addEventListener("click", function(evt) {
     evt.preventDefault();
     writePopup.classList.remove("modal-show");
+    writePopup.classList.remove("modal-error");
   });
 
   form.addEventListener("submit", function(evt) {
     if (!clientName.value || !email.value || !message.value) {
       evt.preventDefault();
-      console.log("Нужно ввести имя, адрес электронной почты и текст сообщения.");
+      writePopup.classList.remove("modal-error");
+      writePopup.offsetWidth = writePopup.offsetWidth;
+      writePopup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("client-name", clientName.value);
@@ -138,6 +141,7 @@ window.addEventListener("keydown", function(evt) {
     if (writePopup.classList.contains("modal-show")) {
       evt.preventDefault();
       writePopup.classList.remove("modal-show");
+      writePopup.classList.remove("modal-error");
     }
     if (buyPopup.classList.contains("modal-show")) {
       evt.preventDefault();
